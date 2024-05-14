@@ -32,15 +32,34 @@ function baba(){
 }
 
 function susu(){
-    var nome = parseInt(document.getElementById('nome').value);
-}
+    var nome = document.getElementById('123').value;
+    
+    var salario = 0;
+    var salario = parseInt(document.getElementById('456').value);
+   
+    
+    console.log("nome: "+ nome);
+    console.log("o seu bruto é: "+ salario);
 
-function sasu(){
-    var salario = parseInt(document.getElementById('nome').value);
-}
 
-function desc(){
-    var descont = parseInt(document.getElementById('nome').value);
+    var liquido = salario;
+    var por = 0
+
+    if  (salario<= 1000){
+        liquido = salario * 0.92
+         por = 8
+    } else if (salario>=1001 && salario<=1500){
+        liquido = salario * 0.915 
+        por = 8.5
+    } else if(salario >1500){
+        liquido = salario * 0.91 
+        por = 9
+    } 
+
+    console.log("a sua porcentagen é: "+ por +" porcento");
+
+
+    console.log("o seu salario liquido é: "+ liquido);
 }
 
 
